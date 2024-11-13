@@ -32,6 +32,7 @@ O cálculo no padrão EAN-8 é feito a partir de uma soma ponderada dos dígitos
 1. Com o valor da soma, calcula-se quanto falta para o próximo múltiplo de 10. O resultado será o dígito verificador.
 
 Por exemplo, digamos que os 7 primeiros dígitos do código sejam 4017072. Logo, 4 encontra-se no 1º índice, 0 no 2º índice, 1 no 3º, 7 no 4º... e assim por diante. A soma ponderada será portanto calculada através de expressão abaixo:
+
 $$
 soma = (3 \times 4) + (1 \times 0) + (3 \times 1) + (1 \times 7) + (3 \times 0) + (1 \times 7) + (3 \times 2)
 $$
